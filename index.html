@@ -39,31 +39,53 @@
             </div>
         </div>
         
-        <div class="search-bar">
-            <div class="field">
-                <div class="field">
-                    <input type="text" id="where" placeholder="Where are you going?">
+        <div class="search-wrapper">
+            <div class="search-box">
+
+                <div class="input-item">
+                    <span class="icon"><img src="homepage/location.svg" alt=""></span>
+                    <input id="location" type="text" placeholder="Where are you going?" data-final="Melbourne">
                 </div>
-            </div>    
-            <div class="field">
-                <div class="date">
-                    <input type="date" placeholder="Check in date">
-                </div> 
+
+                <div class="input-item">
+                    <span class="icon"><img src="homepage/calendar.svg" alt=""></span>
+                    <input id="checkin" type="text" placeholder="Check-in date" data-final="04-19-2022">
+                </div>
+
+                <div class="input-item">
+                    <span class="icon"><img src="homepage/calendar.svg" alt=""></span>
+                    <input id="checkout" type="text" placeholder="Check out date" data-final="04-19-2022">
+                </div>
+
+                <div class="input-item">
+                    <span class="icon"><img src="homepage/user-square.svg" alt=""></span>
+                    <input id="guests" type="text" placeholder="Guests" data-final="0 adult, 0 children">
+                </div>
             </div>
-            <div class="field">
-                <div class="date">
-                    <input type="date" placeholder="Check out date">
-                </div> 
-            </div>
-            <div class="field">
-                <div class="guest">
-                    <input type="number" id="adult" min="0" max="10" placeholder="0"> adults,
-                    <input type="number" id="children" min="0" max="10" placeholder="0"> children
-                </div> 
-            </div>
-            <button>Search</button>
-                 
         </div>
+            <script>
+                document.querySelectorAll(".input-item input").forEach(input => {
+
+                    // Guarda el placeholder original (pregunta)
+                    const originalPlaceholder = input.placeholder;
+
+                    input.addEventListener("focus", () => {
+                        input.value = input.dataset.final;  // texto final (azul)
+                        input.placeholder = "";             // quita placeholder
+                        input.style.color = "#1a73e8";      // azul
+                    });
+
+                    input.addEventListener("blur", () => {
+
+                        // Si se borra el texto → vuelve la pregunta
+                        if (input.value.trim() === "") {
+                            input.placeholder = originalPlaceholder;
+                            input.style.color = "#555";     // gris
+                        }
+                    });
+
+                });
+            </script>
 
 
         <div class="covid-div">
@@ -138,7 +160,6 @@
             
 
         </div>
-        
         
         <div class="seccion-4">
             <h3>Popular hotels</h3>

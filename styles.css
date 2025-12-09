@@ -10,7 +10,6 @@ body{
     margin-right: 30px;
 }
 header{
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,24 +74,51 @@ header img{
     text-align: center;
 }
 
-/*search*/
-.search-bar{
+/* Wrapper */
+.search-wrapper {
+    width: 100%;
     display: flex;
-    width: 1030px;
+    justify-content: center;
+    padding: 20px 0;
 }
-input{
-    background-color: #F2F2F2;
-    border-style: none;
-    width: 170px;
+
+/* Flex container */
+.search-box {
+    display: flex;
+    gap: 12px;
 }
-#where{
-    width: 260px;
+
+/* Default field style (gris) */
+.input-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border: 2px solid transparent;   /* Sin borde */
+    border-radius: 8px;
+    background: #f1f1f1;              /* Gris como en tu imagen */
+    min-width: 220px;
+    transition: 0.2s ease;
 }
-#adult, #children{
-    width: 30px;
+
+.icon {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #1a73e8;
 }
-.guest{
-    width: 210px;
+
+.input-item input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    background: none;
+}
+
+/* ⭐ Al hacer clic (focus) */
+.input-item:focus-within {
+    border-color: #1a73e8;           /* Borde azul */
+    background: white;               /* Fondo blanco */
+    box-shadow: 0 0 6px rgba(26,115,232,0.4);
 }
 /*covid*/
 .covid-div{

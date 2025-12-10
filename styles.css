@@ -60,7 +60,7 @@ header img{
     align-items: center;
     justify-content: center;
 }
-.seccion-1 img{
+.img1{
     width: 1240px;
     height: 500px;
     object-fit: cover;
@@ -76,32 +76,46 @@ header img{
 
 /* Wrapper */
 .search-wrapper {
-    width: 100%;
+    background: #FFFFFF;
+    position: absolute;
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    align-self: end;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 40px 2px rgba(0,0,0,0.5);
+    transform: translateY(50%);
 }
 
 /* Flex container */
 .search-box {
     display: flex;
     gap: 12px;
+    
 }
 
 /* Default field style (gris) */
 .input-item {
     display: flex;
     align-items: center;
-    padding: 12px 14px;
     border: 2px solid transparent;   /* Sin borde */
     border-radius: 8px;
     background: #f1f1f1;              /* Gris como en tu imagen */
-    min-width: 220px;
     transition: 0.2s ease;
+    height: 43px;
+}
+.input-item.clase1{
+    width: 240px;
+}
+.input-item.clase2{
+    width: 170px;
+}
+.input-item.clase3{
+    width: 210px;
 }
 
 .icon {
     margin-right: 10px;
+    margin-left: 10px;
     font-size: 16px;
     color: #1a73e8;
 }
@@ -109,10 +123,9 @@ header img{
 .input-item input {
     border: none;
     outline: none;
-    font-size: 15px;
-    width: 100%;
     background: none;
 }
+
 
 /* ⭐ Al hacer clic (focus) */
 .input-item:focus-within {
@@ -120,6 +133,15 @@ header img{
     background: white;               /* Fondo blanco */
     box-shadow: 0 0 6px rgba(26,115,232,0.4);
 }
+.search-wrapper button{
+    width: 148px;
+    height: 44px;
+    background-color: #2F80ED;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+}
+
 /*covid*/
 .covid-div{
     background-color: #FCEFCA;
@@ -163,6 +185,7 @@ header img{
 .seccion3-gallery{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 .seccion3-gallery > div {
     position: relative;

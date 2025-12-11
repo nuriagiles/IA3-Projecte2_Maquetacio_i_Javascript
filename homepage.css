@@ -6,14 +6,22 @@ main{
     justify-items: center;
 }
 body{
-    margin-left: 30px;
-    margin-right: 30px;
+    font-family: 'SF Pro Display', sans-serif;
+    
 }
-header{
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: 400;
+}
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1240px;
+    justify-self: center;
 }
+
 header img{
     margin-top: 24px;
 }
@@ -32,26 +40,36 @@ header img{
     color: #333333;
 }
 /*button header*/
+.header-button button a{
+    text-decoration: none;
+}
 .header-button{
     margin-top: 14px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .header-register{
     width: 92px;
     height: 40px;
     border-radius: 8px;
-    color: #2F80ED;
+    
     background-color: #FFFFFF;
     border: 1px solid #2F80ED;
+}
+.register-color{
+    color: #2F80ED;
 }
 .header-sign{
     width: 92px;
     height: 40px;
     border-radius: 8px;
-    color: #FFFFFF;
+   
     background-color: #2F80ED;
     border: 1px solid #2F80ED;
+}
+.sign-color{
+    color: #FFFFFF;
 }
 /*main*/
 .seccion-1{
@@ -126,12 +144,9 @@ header img{
     background: none;
 }
 
-
-/* ⭐ Al hacer clic (focus) */
 .input-item:focus-within {
     border-color: #1a73e8;           /* Borde azul */
     background: white;               /* Fondo blanco */
-    box-shadow: 0 0 6px rgba(26,115,232,0.4);
 }
 .search-wrapper button{
     width: 148px;
@@ -148,6 +163,7 @@ header img{
     width: 1240px;
     height: 72px;
     border-radius: 8px;
+    margin-top: 80px;
 }
 .covid-content{
     display: flex;
@@ -271,15 +287,48 @@ header img{
 }
 /*seccion 6*/
 .seccion-6{
+    line-height: 30px;
+}
+.seccion6-nav{
     display: flex;
     justify-content: space-between;
     width: 1240px;
 }
+.seccion6-title{
+    justify-self: center;
+    justify-items: center;
+}
+.seccion6-title p{
+    color: #2F80ED;
+}
+.seccion-6 ul li{
+    list-style: none;
+}
+.seccion-6 ul li a{
+    text-decoration: none;
+    color: #2F80ED;
+}
+/*secciones margin*/
+.seccion-1, .seccion-2, .seccion-3, .seccion-4, .seccion-5{
+    margin-top: 50px;
+}
+.seccion-6{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
 /*footer*/
 footer{
+    width: 100%;
+    background-color: #EBEBEB; 
+    
+
+}
+.footer-text{
     display: flex;
+    justify-content: flex-end; /* mantenerlo a la derecha */
+    align-items: center;
     gap: 5px;
-    justify-content: end;
-    background-color: #EBEBEB;
-    width: 1440px;
+    max-width: 1200px;   /* ancho máximo del contenido */
+    margin: 0 auto;      /* centrar en la pantalla */
+    padding: 15px 150px 15px 0px;  /* espacio interno */
 }

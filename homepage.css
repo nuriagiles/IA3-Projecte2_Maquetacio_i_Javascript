@@ -11,7 +11,7 @@ body{
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    src: url('fuente/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
     font-weight: 400;
 }
 .header-container{

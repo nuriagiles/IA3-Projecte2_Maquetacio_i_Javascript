@@ -9,9 +9,34 @@ body{
     font-family: 'SF Pro Display', sans-serif;
     
 }
+.tamaño-32{
+    size: 32px;
+    margin-bottom: 20px;
+}
+.tamaño-28{
+    size: 28px;
+    margin-bottom: 15px;
+}
+.tamaño-20{
+    size: 20px;
+    margin-top: 10px;
+}
+.tamaño-16{
+    size: 16px;
+}
+.p-20{
+    size: 20px;
+}
+.p-16{
+    size: 16px;
+}
+.p-14{
+    size: 14px;
+    margin-top: 5px;
+}
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
 }
 .header-container{
@@ -23,12 +48,12 @@ body{
 }
 
 header img{
-    margin-top: 24px;
+    margin-top: 20px;
 }
 .div-nav{
-    margin-top: 24px;
+    margin-top: 15px;
     width: 458px;
-    justify-content: space-between;
+    align-self: center;
 }
 .header-nav{
     display: flex;
@@ -44,33 +69,19 @@ header img{
     text-decoration: none;
 }
 .header-button{
-    margin-top: 14px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
-.header-register{
-    width: 92px;
-    height: 40px;
-    border-radius: 8px;
-    
-    background-color: #FFFFFF;
-    border: 1px solid #2F80ED;
+.header-button img{
+    object-fit: cover;
 }
-.register-color{
-    color: #2F80ED;
+.girl-icon{
+    border-radius: 50%;
+    align-self: center;
 }
-.header-sign{
-    width: 92px;
-    height: 40px;
-    border-radius: 8px;
-   
-    background-color: #2F80ED;
-    border: 1px solid #2F80ED;
-}
-.sign-color{
-    color: #FFFFFF;
-}
+
 /*main*/
 .seccion-1{
     margin-top: 10px;
@@ -156,6 +167,13 @@ header img{
     border-radius: 6px;
     border: none;
 }
+.search-wrapper button:hover{
+    background-color: #1c5ed6;
+}
+.search-wrapper button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 /*covid*/
 .covid-div{
@@ -186,6 +204,7 @@ header img{
     border-radius: 8px;
 }
 .seccion2-gallery{
+    margin-top: 30px;
     display: flex;
     gap: 15px;
 }
@@ -199,6 +218,7 @@ header img{
     filter: brightness(80%);
 }
 .seccion3-gallery{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -219,6 +239,7 @@ header img{
 }
 /*Seccion 4*/
 .seccion4-gallery{
+    margin-top: 30px;
     display: flex;
     gap: 15px;
 }
@@ -255,7 +276,7 @@ header img{
     position: relative;
     display: flex;
     z-index: 2;
-    padding-left: 40px;
+    padding-left: 80px;
     align-items: center;
 }
 
@@ -269,6 +290,7 @@ header img{
 .div-texto5 button{
     width: 182px;
     height: 44px;
+    margin-top: 20px;
     border-radius: 6px;
     background-color: #2F80ED;
     border: 1px solid #2F80ED;
@@ -288,11 +310,19 @@ header img{
 /*seccion 6*/
 .seccion-6{
     line-height: 30px;
+    width: 1240px;
+}
+.seccion6-img{
+    width: 225px;
 }
 .seccion6-nav{
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    gap: 120px;
+}
+.seccion6-nav h4{
+    margin-bottom: 15px;
 }
 .seccion6-title{
     justify-self: center;
@@ -308,13 +338,34 @@ header img{
     text-decoration: none;
     color: #2F80ED;
 }
+.seccion6-navegador{
+    display: flex;
+    width: 945px;
+    justify-content: space-between;
+}
+
+.color-gris{
+    color: #4F4F4F;
+}
+.seccion6-navegador-div1{
+    margin-right: 100px;
+}
+.div-2-3{
+    display: flex;
+    gap: 45px;
+    margin-right: 40px;
+}
+
 /*secciones margin*/
-.seccion-1, .seccion-2, .seccion-3, .seccion-4, .seccion-5{
-    margin-top: 50px;
+.seccion-1{
+    margin-top: 20px;
+}
+.seccion-2, .seccion-3, .seccion-4, .seccion-5{
+    margin-top: 60px;
 }
 .seccion-6{
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-bottom: 70px;
 }
 /*footer*/
 footer{

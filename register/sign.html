@@ -22,32 +22,45 @@
         <input type="email" id="email" name="email">
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+        <div class="div-password">
+           <input type="password" id="password" name="password">
+            <img src="img/ver.svg" alt=""> 
+        </div>
+        
+        <div class="div-forgot">
+            <label class="checkbox">
+                <input type="checkbox" id="keep-signed" name="keep-signed">
+                Keep me signed in
+            </label>
 
-        <label class="checkbox">
-            <input type="checkbox" id="keep-signed" name="keep-signed">
-            Keep me signed in
-        </label>
-
-        <p><a href="password/password.html">Forgot password?</a></p>
+            <p><a href="password/password.html">Forgot password?</a></p>
+        </div>
+        
 
         <button type="submit" class="primary"><a href="/homepageiniciado/homepage2.html">Continue with email</a></button>
         
-        <hr>
+        <div class="hr-div">
+            <hr>
+            <div class="p-div">
+                <p>or use one of these options</p>
+            </div>
+            
+        </div>
+        
+        <div class="div-social">
+            <button type="button" class="social google">
+                <img src="img/google.svg" alt="" width="20" height="20">
+                Continue with Google
+            </button>
 
-        <p>or use one of these options</p>
+            <button type="button" class="social facebook">
+                <img src="img/facebook.svg" alt="" width="20" height="20">
+                Continue with Facebook
+            </button>
 
-        <button type="button" class="social google">
-            <img src="img/google.svg" alt="" width="20" height="20">
-            Continue with Google
-        </button>
-
-        <button type="button" class="social facebook">
-            <img src="img/facebook.svg" alt="" width="20" height="20">
-            Continue with Facebook
-        </button>
-
-        <p>Don’t have an account? <a href="register.html">Register</a></p>
+            <p>Don’t have an account? <a href="register.html">Register</a></p> 
+        </div>
+       
     </form>
 
 </body>

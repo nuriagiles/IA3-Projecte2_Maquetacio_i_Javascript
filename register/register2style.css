@@ -11,7 +11,7 @@ body{
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    src: url('/fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
     font-weight: 400;
 }
 .header-container{
@@ -26,87 +26,81 @@ header img{
     margin-top: 24px;
 }
 
-/*form*/
 form {
-    width: 380px;
+    width: 400px;
     background: #fff;
     padding: 30px 40px;
     border-radius: 12px;
     text-align: center;
+    justify-self: center;
+    margin-top: 50px;
 }
 
-/* Título */
-legend {
+/* TITLE */
+h2 {
+    margin-bottom: 20px;
     font-size: 26px;
-    margin-bottom: 10px;
-    font-weight: bold;
 }
-
-/* Subtítulo */
-form > p:first-of-type {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 25px;
-    line-height: 1.4;
+p{
+    color: #4F4F4F;
 }
-
-/* Labels */
+p a{
+    color: #2F80ED;
+    text-decoration: none;
+}
+/* LABELS */
 label {
     display: block;
     text-align: left;
-    margin: 10px 0 5px;
+    margin: 40px 0 6px;
+    font-weight: 500;
     font-size: 14px;
-    font-weight: bold;
 }
 
-/* Inputs */
+/* INPUTS */
 input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    background: #F2F2F2;
-    border: 1px solid #F2F2F2;
+    width: 400px;
+    padding: 12px 0px 12px 0px;
+    border: none;
+    background-color: #f2f2f2;
     border-radius: 8px;
     font-size: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Focus */
-input:focus {
-    border-color: #0071e3;
-    outline: none;
-}
-
-/* Botón principal */
-button {
+/* PASSWORD CONTAINER */
+.div-password {
+    position: relative;
     width: 100%;
-    background: #0071e3;
-    color: white;
+}
+
+
+/* EYE ICON */
+.div-password .img1 {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-100%);
+    cursor: pointer;
+}
+
+
+/* MAIN BUTTON */
+button.primary {
+    width: 400px;
+    height: 44px;
+    background: #2F80ED;
+    color: #fff;
     padding: 12px;
     border: none;
     border-radius: 8px;
-    margin: 15px 0 20px;
+    margin: 25px 0 25px;
     font-size: 15px;
     cursor: pointer;
-    font-weight: bold;
 }
 
-button:hover {
-    background: #005bbd;
-}
-
-/* Texto legal */
-form p:last-of-type {
-    font-size: 13px;
-    color: #555;
-    line-height: 1.4;
-    margin-top: 10px;
-}
-
-form p:last-of-type a {
-    color: #0071e3;
+button.primary a {
+    color: white;
     text-decoration: none;
 }
 
-form p:last-of-type a:hover {
-    text-decoration: underline;
-}

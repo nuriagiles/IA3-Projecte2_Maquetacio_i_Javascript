@@ -26,3 +26,59 @@ header img{
     margin-top: 24px;
 }
 
+
+/* TITLE */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+}
+p{
+    color: #4F4F4F;
+    font-size: 16px;
+    text-align: center;
+}
+p b{
+    color: #303030;
+}
+
+.form-check{
+    margin-top: 100px;
+    width: 400px;
+    justify-self: center;
+}
+
+
+/* MAIN BUTTON */
+button.primary {
+    width: 400px;
+    height: 44px;
+    background: #2F80ED;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin: 25px 0 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.primary a {
+    color: white;
+    text-decoration: none;
+}
+
+.fondo{
+    width: 280px;
+    height: 250px;
+    background-color: #FEE2654D;
+    border-radius: 20px;
+    justify-self: center;
+}
+
+.fondo img{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}

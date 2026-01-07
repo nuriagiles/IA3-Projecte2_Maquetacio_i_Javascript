@@ -16,7 +16,7 @@
             <div class="div-nav">
                 <nav>
                     <ul class="header-nav">
-                        <li><a href="">Home</a></li>
+                        <li><a href="/homepageiniciado/homepage2.html">Home</a></li>
                         <li><a href="">Discover</a></li>
                         <li><a href="">Activities</a></li>
                         <li><a href="">About</a></li>
@@ -37,8 +37,8 @@
         <div class="seccion-1">
             <img src="homepage/img1.jpg" alt="" class="img1">
             <div class="seccion1-texto">
-                <h2>Enjoy Your Dream Vacation</h2>
-                <p>Plan and book our perfect trip with expert advice, travel tips, destination <br>information and  inspiration from us</p>
+                <h1 class="tamaño-32">Enjoy Your Dream Vacation</h1>
+                <p class="p-20">Plan and book our perfect trip with expert advice, travel tips, destination <br>information and  inspiration from us</p>
             </div>
 
             <div class="search-wrapper">
@@ -69,85 +69,64 @@
             
         </div>
         
-            <script>
-                document.querySelectorAll(".input-item input").forEach(input => {
 
-                    // Guarda el placeholder original (pregunta)
-                    const originalPlaceholder = input.placeholder;
-
-                    input.addEventListener("focus", () => {
-                        input.value = input.dataset.final;  // texto final (azul)
-                        input.placeholder = "";             // quita placeholder
-                        input.style.color = "#1a73e8";      // azul
-                    });
-
-                    input.addEventListener("blur", () => {
-
-                        // Si se borra el texto → vuelve la pregunta
-                        if (input.value.trim() === "") {
-                            input.placeholder = originalPlaceholder;
-                            input.style.color = "#555";     
-                        }
-                    });
-                });
-            </script>
 
 
         <div class="covid-div">
             <div class="covid-content">
                 <img src="homepage/Group.svg" alt="" width="32" height="32">
-                <p>Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+                <p class="p-16">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
             </div>
             
         </div>
         
 
         <div class="seccion-2">
-            <h3>Enjoy your dream vacation</h3>
-            <p>Plan and book our perfect trip with expert advice, travel tips, destination information and  inspiration from us</p>
+            <h2 class="tamaño-28">Enjoy your dream vacation</h2>
+            <p class="p-16">Plan and book our perfect trip with expert advice, travel tips, destination information and <br> inspiration from us</p>
             
             <div class="seccion2-gallery">
                 <div>
                     <img src="homepage/img2.jpg" alt="">
-                    <h4>Australia</h4>
-                    <p>2246 properties</p>
+                    <h3 class="tamaño-20">Australia</h3>
+                    <p class="p-14">2246 properties</p>
                 </div>
                 <div>
                     <img src="homepage/img3.jpg" alt="">
-                    <h4>Japan</h4>
-                    <p>1278 properties</p>
+                    <h3 class="tamaño-20">Japan</h3>
+                    <p class="p-14">1278 properties</p>
                 </div>
                 <div>
                     <img src="homepage/img4.jpg" alt="">
-                    <h4>New Zealand</h4>
-                    <p>480 properties</p>
+                    <h3 class="tamaño-20">New Zealand</h3>
+                    <p class="p-14">480 properties</p>
                 </div>
                 <div>
                     <img src="homepage/img5.jpg" alt="">
-                    <h4>Greece</h4>
-                    <p>320 properties</p>
+                    <h3 class="tamaño-20">Greece</h3>
+                    <p class="p-14">320 properties</p>
                 </div>    
             </div>
         </div>
         
         
         <div class="seccion-3">
-            <h3>Get inspiration for your next trip</h3>
+            <h2 class="tamaño-28">Get inspiration for your next trip</h2>
             
             <div class="seccion3-gallery">
                 <div>
                     <img src="homepage/img6.jpg" alt="">
                     <div class="div-texto3">    
-                        <h4>Sydeny’s 10 most fashionable 5 star hotels</h4>
-                        <p>Browse the fastest growing tourism sector in the heart of Australia tourism capital ....</p>
+                        <h3 class="tamaño-20">Sydeny’s 10 most fashionable 5 star <br>hotels</h3>
+                        <p class="p-16">Browse the fastest growing tourism sector in the heart of Australia tourism capital ....</p>
                     </div>
                 </div>
                 
                 <div>
                     <img src="homepage/img7.jpg" alt="">
                     <div class="div-texto3">
-                        <h4>Top cities for Vegan Travellers</h4>
-                        <p>Top sites where you do not have to worry about being a vegan. Our tourist guide is here...</p>
+                        <h3 class="tamaño-20">Top cities for Vegan Travellers</h3>
+                        <p class="p-16">Top sites where you do not have to worry about being a vegan. Our tourist guide is here...</p>
                     </div>
 
                 </div>
@@ -155,44 +134,41 @@
                 <div>
                     <img src="homepage/img8.jpg" alt="">
                     <div class="div-texto3">
-                        <h4>World’s top destinations during and post covid timeline</h4>
-                        <p>Pandemic is still intact and will be here for a longer time. Here’s where your next destination...</p>
+                        <h3 class="tamaño-20">World’s top destinations during and post <br>covid timeline</h3>
+                        <p class="p-16">Pandemic is still intact and will be here for a longer time. Here’s where your next destination...</p>
                     </div> 
-                </div>
-                         
+                </div>  
                 
             </div>
-            
-
         </div>
         
         <div class="seccion-4">
-            <h3>Popular hotels</h3>
+            <h2 class="tamaño-28">Popular hotels</h2>
 
             <div class="seccion4-gallery">
                     
                 <div>
                     <img src="homepage/img9.jpg" alt="">
-                    <h4>Lakeside Motel Warefront</h4>
-                    <p>2246 properties</p>
+                    <h3 class="tamaño-20">Lakeside Motel Warefront</h3>
+                    <p class="p-14">2246 properties</p>
                 </div>
 
                 <div>
                     <img src="homepage/img10.jpg" alt="">
-                    <h4>Recce Graham resort</h4>
-                    <p>1278 properties</p>
+                    <h3 class="tamaño-20">Recce Graham resort</h3>
+                    <p class="p-14">1278 properties</p>
                 </div>
 
                 <div>
                     <img src="homepage/img11.jpg" alt="">
-                    <h4>Fireside Dinners</h4>
-                    <p>480 properties</p>
+                    <h3 class="tamaño-20">Fireside Dinners</h3>
+                    <p class="p-14">480 properties</p>
                 </div>
 
                 <div>
                     <img src="homepage/img12.jpg" alt="">
-                    <h4>Oculous Inn Stay</h4>
-                    <p>320 properties</p>
+                    <h3 class="tamaño-20">Oculous Inn Stay</h3>
+                    <p class="p-14">320 properties</p>
                 </div>
 
             </div>
@@ -205,7 +181,7 @@
 
             <div class="div-contenedor5">
                 <div class="div-texto5">
-                    <h3>Download the mobile application for bonus coupons and travel codes</h3>
+                    <h2>Download the mobile application for bonus <br>coupons and travel codes</h2>
                     <button>Download mobile app</button>
                 </div>
             </div>
@@ -217,57 +193,61 @@
         
         <div class="seccion-6">
             <div class="seccion6-title">
-                <h3>Explore the world with My Dream place</h3>
-                <p>Discover new places and experiences</p>
+                <h2 class="tamaño-28">Explore the world with My Dream place</h2>
+                <p class="p-16">Discover new places and experiences</p>
             </div>
             <div class="seccion6-nav">
-                <div>
+                <div class="seccion6-img">
                     <img src="homepage/mydreamplace.svg" alt="">
-                    <p>Your next goto companion for travel</p>
+                    <p class="color-gris">Your next goto companion for travel</p>
                 </div>
+                <div class="seccion6-navegador">
+                    <div class="seccion6-navegador-div1">
+                        <h4 class="tamaño-16">Company</h4>
+                        <ul class="color-gris p-14">
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>Newsroom</li>
+                            <li>Advertising</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="div-2-3">
+                        <div class="seccion6-navegador-div2">
+                            <h4 class="tamaño-16">Explore</h4>
+                            <ul class="color-gris p-14">
+                                <li>Australia</li>
+                                <li>New Zealand</li>
+                                <li>United States America (USA)</li>
+                                <li>Greece</li>
+                                <li>Maldives</li>
+                                <li>Singapore</li>
+                                <li><a href="">See more</a></li>
+                            </ul>
+                        </div>
+                        <div class="seccion6-navegador-div3">
+                            <h4 class="tamaño-16">Terms and Policies</h4>
+                            <ul class="color-gris p-14">
+                                <li>Privacy Policy</li>
+                                <li>Terms of use</li>
+                                <li>Acessibility</li>
+                                <li>Reward system policy</li>
+                            </ul>            
+                        </div>
+                    </div>
+                    
 
-                <div>
-                    <h4>Company</h4>
-                    <ul>
-                        <li>About</li>
-                        <li>Jobs</li>
-                        <li>Newsroom</li>
-                        <li>Advertising</li>
-                        <li>Contact us</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Explore</h4>
-                    <ul>
-                        <li>Australia</li>
-                        <li>New Zealand</li>
-                        <li>United States America (USA)</li>
-                        <li>Greece</li>
-                        <li>Maldives</li>
-                        <li>Singapore</li>
-                        <li><a href="">See more</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Terms and Policies</h4>
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms of use</li>
-                        <li>Acessibility</li>
-                        <li>Reward system policy</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Help</h4>
-                    <ul>
-                        <li>Support</li>
-                        <li>Cancel your bookings</li>
-                        <li>Use Coupon</li>
-                        <li>Refund Policies</li>
-                        <li>International Travel Documents</li>
-                    </ul>
-                </div>
-                
+                    <div class="seccion6-navegador-div4">
+                        <h4 class="tamaño-16">Help</h4>
+                        <ul class="color-gris p-14">
+                            <li>Support</li>
+                            <li>Cancel your bookings</li>
+                            <li>Use Coupon</li>
+                            <li>Refund Policies</li>
+                            <li>International Travel Documents</li>
+                        </ul>
+                    </div>
+                </div> 
             </div>
             
         </div>

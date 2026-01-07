@@ -16,25 +16,36 @@
     </header>
 
     <form>
-        <legend>Register</legend>
-        <label for="">Email address</label>
-        <input type="email" name="" id="">
+        <h2>Register</h2>
 
-        <button><a href="register2.html">Continue with email</a></button>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email">
+        
 
-        <hr>
-        <p>or use one of these options</p>
+        <button type="submit" class="primary"><a href="/register/register2.html">Continue with email</a></button>
+        
+        <div class="hr-div">
+            <hr>
+            <div class="p-div">
+                <p>or use one of these options</p>
+            </div>
+            
+        </div>
+        
+        <div class="div-social">
+            <button type="button" class="social google">
+                <img src="img/google.svg" alt="" width="20" height="20">
+                Continue with Google
+            </button>
 
-        <button>
-            <img src="img/google.svg" alt="" width="20" height="20">
-            <p>Continue with Google</p>
-        </button>
-        <button>
-            <img src="img/facebook.svg" alt="" width="20" height="20">
-            <p>Continue with Facebook</p>
-        </button>
+            <button type="button" class="social facebook">
+                <img src="img/facebook.svg" alt="" width="20" height="20">
+                Continue with Facebook
+            </button>
 
-        <p>Already have an account? <a href="sign.html">Sign in</a></p>
+            <p>Already have an account? <a href="sign.html">Sign in</a></p> 
+        </div>
+       
     </form>
 
 </body>

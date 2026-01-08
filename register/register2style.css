@@ -36,7 +36,7 @@ form {
     margin-top: 50px;
 }
 
-/* TITLE */
+/*titulo*/
 h2 {
     margin-bottom: 20px;
     font-size: 26px;
@@ -48,7 +48,7 @@ p a{
     color: #2F80ED;
     text-decoration: none;
 }
-/* LABELS */
+/*labels*/
 label {
     display: block;
     text-align: left;
@@ -57,7 +57,7 @@ label {
     font-size: 14px;
 }
 
-/* INPUTS */
+/*inputs*/
 input[type="password"] {
     width: 400px;
     padding: 12px 0px 12px 0px;
@@ -68,14 +68,14 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-/* PASSWORD CONTAINER */
+/*password container*/
 .div-password {
     position: relative;
     width: 100%;
 }
 
 
-/* EYE ICON */
+/*eye icon*/
 .div-password .img1 {
     position: absolute;
     right: 15px;
@@ -85,7 +85,7 @@ input[type="password"] {
 }
 
 
-/* MAIN BUTTON */
+/*main button*/
 button.primary {
     width: 400px;
     height: 44px;

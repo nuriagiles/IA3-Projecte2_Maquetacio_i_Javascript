@@ -36,13 +36,13 @@ form {
     margin-top: 50px;
 }
 
-/* TITLE */
+/*titulo*/
 h2 {
     margin-bottom: 30px;
     font-size: 26px;
 }
 
-/* LABELS */
+/*labels*/
 label {
     display: block;
     text-align: left;
@@ -51,7 +51,7 @@ label {
     font-size: 14px;
 }
 
-/* INPUTS */
+/*inputs*/
 input[type="email"]{
     width: 400px;
     padding: 12px 0px 12px 0px;
@@ -62,10 +62,7 @@ input[type="email"]{
     margin-bottom: 20px;
 }
 
-
-
-
-/* MAIN BUTTON */
+/*main button*/
 button.primary {
     width: 400px;
     background: #1a73e8;
@@ -83,7 +80,7 @@ button.primary a {
     text-decoration: none;
 }
 
-/* DIVIDER */
+/*hr*/
 hr {
     border: none;
     border-top: 1px solid #e0e0e0;
@@ -127,7 +124,7 @@ hr {
     color: #1a73e8;
     text-decoration: none;
 }
-/* SOCIAL BUTTONS */
+/*social buttons*/
 .social {
     width: 400px;
     padding: 12px;

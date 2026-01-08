@@ -36,13 +36,13 @@ form {
     margin-top: 50px;
 }
 
-/* TITLE */
+/*titulo*/
 h2 {
     margin-bottom: 30px;
     font-size: 26px;
 }
 
-/* LABELS */
+/*labels*/
 label {
     display: block;
     text-align: left;
@@ -51,7 +51,7 @@ label {
     font-size: 14px;
 }
 
-/* INPUTS */
+/*inputs*/
 input[type="email"],
 input[type="password"] {
     width: 400px;
@@ -63,14 +63,14 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-/* PASSWORD CONTAINER */
+/*password container*/
 .div-password {
     position: relative;
     width: 100%;
 }
 
 
-/* EYE ICON */
+/*eye icon*/
 .div-password img {
     position: absolute;
     right: -12px;
@@ -79,7 +79,7 @@ input[type="password"] {
     cursor: pointer;
 }
 
-/* CHECKBOX */
+/*checkbox*/
 .checkbox {
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ input[type="checkbox"] {
     width: 400px;
 }
 
-/* FORGOT LINK */
+/*forgot*/
 form p a {
     color: #1a73e8;
     font-size: 13px;
@@ -117,7 +117,7 @@ form p a {
     justify-self: center;
 }
 
-/* MAIN BUTTON */
+/*main button*/
 button.primary {
     width: 400px;
     background: #1a73e8;
@@ -135,7 +135,7 @@ button.primary a {
     text-decoration: none;
 }
 
-/* DIVIDER */
+/*hr*/
 hr {
     border: none;
     border-top: 1px solid #e0e0e0;
@@ -175,7 +175,7 @@ hr {
 .div-social p{
     margin-top: 50px;
 }
-/* SOCIAL BUTTONS */
+/*social buttons*/
 .social {
     width: 400px;
     padding: 12px;

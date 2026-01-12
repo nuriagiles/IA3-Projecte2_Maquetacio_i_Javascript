@@ -37,29 +37,37 @@
             </div>
             <div class="check-form">
                 <form action="">
-                    <div class="input-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="phone">Mobile number</label>
-
-                        <div>
-                            <img src="checkout-img/australia.png" alt="" width="24" height="24">
-                            <select name="pais" id="paises">
-                                <option value="Australia">+61</option>
-                            </select>
+                    <div class="name">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
-                        
-                        <input type="tel" id="phone" name="phone" required>
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
                     </div>
+                    <div class="mobil-number">
+                        <div class="input-group">
+                            <label for="phone">Mobile number</label>
 
-                    <input type="checkbox" id="alert" name="terms" required>
-                    <label for="alert">Receive text alerts about this trip.</label>
+                            <div>
+                                <img src="checkout-img/australia.svg" alt="" width="24" height="24">
+                                <select name="pais" id="paises">
+                                    <option value="Australia">+61</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>                 
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="text-alert">
+                        <input type="checkbox" id="alert" name="terms" required>
+                        <label for="alert">Receive text alerts about this trip.</label>
+                    </div>
+                    
                 </form>
             </div>
         </div>
@@ -70,6 +78,7 @@
                 <img src="checkout-img/card-tick.svg" alt="">
                 <h3>Payment options</h3>
             </div>
+
             <div class="payment">
                 <nav>
                     <ul>
@@ -123,6 +132,7 @@
             <input type="text" id="billing-zip-code" name="billing-zip-code" required>
 
         </div>
+
         <div class="important-information">
             <div class="check-title">
                 <h3>Important information about your booking</h3>

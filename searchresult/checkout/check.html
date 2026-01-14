@@ -22,173 +22,227 @@
     </header>
 
     <main>
+        <h1 class="secure-h1">Secure your reservation</h1>
         <div class="covid-div">
             <div class="covid-content">
                 <img src="/homepage/Group.svg" alt="" width="32" height="32">
                 <p class="p-16">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
             </div>
         </div>
-        
-        <div class="check-div">
-            <div class="check-title">
-                <img src="checkout-img/security-user.svg" alt="">
-                <h3>Room 1</h3>
-                <p>2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
-            </div>
-            <div class="check-form">
-                <form action="">
-                    <div class="name">
-                        <div class="input-group">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name" required>
-                        </div>
-                    </div>
-                    <div class="mobil-number">
-                        <div class="input-group">
-                            <label for="phone">Mobile number</label>
 
-                            <div>
-                                <img src="checkout-img/australia.svg" alt="" width="24" height="24">
-                                <select name="pais" id="paises">
-                                    <option value="Australia">+61</option>
+        <div class="div-a-b">
+                <div class="div-a">
+                <div class="check-div">
+                    <div class="check-title">
+                        <img src="checkout-img/security-user.svg" alt="">
+                        <h3>Room 1</h3>
+                        <p>2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
+                    </div>
+                    <div class="check-form">
+                        <form action="">
+                            <div class="name">
+                                <div class="input-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                            <div class="mobil-number">
+                                <div class="input-group">
+                                    <label for="phone">Mobile number</label>
+
+                                    <div class="phone-select">
+                                        <img src="checkout-img/australia.svg" alt="" width="24" height="24">
+                                        <select name="pais" id="paises">
+                                            <option value="Australia" class="australia">+61</option>
+                                        </select>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>                 
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="text-alert">
+                                <input type="checkbox" id="alert" name="terms" required>
+                                <label for="alert">Receive text alerts about this trip.</label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <div class="check-title">
+                        <img src="checkout-img/card-tick.svg" alt="">
+                        <h3>Payment options</h3>
+                    </div>
+
+                    <div class="methods-div">
+                        <div class="payment-div">
+                            <div class="payment">
+                                <button class="debit">Debit/Credit Card</button>
+                                <button class="paypal">Paypal</button>
+                                <button class="bank">Bank transfer</button>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-buttons">
+                            <button><img src="checkout-img/mastercard.svg" alt="Visa" width="42.7" height="24"></button>
+                            <button><img src="checkout-img/visa.svg" alt="Mastercard" width="42.7" height="24"></button>
+                            <button><img src="checkout-img/america.svg" alt="Paypal" width="42.7" height="24"></button>
+                            <button><img src="checkout-img/discover.svg" alt="Bank transfer" width="42.7" height="24"></button>
+                        </div>
+
+                        <div class="input-name-card">
+                            <label for="">Name on card</label>
+                            <input type="text" id="name-on-card" name="name-on-card" required>
+                        </div>
+                        
+                        <div class="input-name-card">
+                            <label for="">Debit/Credit card number</label>
+                            <input type="text" id="card-number" name="card-number" required>
+                        </div>
+                        
+                        <div class="month-year-group">
+                            <label for="">Expiration Date</label>
+                            <div class="month-year">
+                                <select name="month" id="month">
+                                    <option value="Month">Month</option>
+                                    <option value="Jenuary">Jenuary</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
                                 </select>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>                 
-
+                                <select name="year" id="year">
+                                    <option value="Year">Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                </select>
+                            </div>
+                            
                         </div>
+                        <div class="div-security-zip">
+                            <div class="input-security-code">
+                                <label for="">Security Code</label>
+                                <input type="text" id="security-code" name="security-code" required>
+                            </div>
 
+                            <div class="input-security-code">
+                                <label for="">Billing Zip code</label>
+                                <input type="text" id="billing-zip-code" name="billing-zip-code" required>
+                            </div>
+                        </div>
+                        
                     </div>
                     
-                    <div class="text-alert">
-                        <input type="checkbox" id="alert" name="terms" required>
-                        <label for="alert">Receive text alerts about this trip.</label>
+                </div>
+
+                <div class="important-information">
+                    <div class="check-title-yellow">
+                        <h3>Important information about your booking</h3>
+                    </div>
+                    <div class="important-information-div">
+                        <div class="important-information-text">
+                            <ul>
+                                <li class="p-15">This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit to use for a future stay.</li>
+                                <li class="p-15">Stay extensions will require a new reservation.</li>
+                                <li class="p-15">Front desk staff will greet guests on arrival</li>
+                                <li class="p-15">No refunds will be issued for late check-in or early check-out.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="important-information-text2">
+                            <p class="p-15">
+                                By clicking the button below, I acknowledge that I have reviewed the <a href="">Privacy Statement</a> and have reviewd and accept the <a href="">Rules and Restrictions</a> and <a href="">Terms of Use</a>.
+                            </p>
+                        </div>
+                    
+                        <button class="confirm-button p-15">Complete Booking</button>
+
+                        <div class="secure-transmission">
+                            <img src="checkout-img/secure.svg" alt="">
+                            <p>We use secure transmission and encrypted storage to protect your personal information</p>
+                        </div>
                     </div>
                     
-                </form>
+
+                </div>
             </div>
-        </div>
+            
 
-
-        <div class="payment-methods">
-            <div class="check-title">
-                <img src="checkout-img/card-tick.svg" alt="">
-                <h3>Payment options</h3>
-            </div>
-
-            <div class="payment">
-                <nav>
-                    <ul>
-                        <li>Debit/Credit Card</li>
-                        <li>Paypal</li>
-                        <li>Bank transfer</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="payment-buttons">
-                <button><img src="checkout-img/mastercard.png" alt="Visa" width="42.7" height="24"></button>
-                <button><img src="checkout-img/visa.png" alt="Mastercard" width="42.7" height="24"></button>
-                <button><img src="checkout-img/american.png" alt="Paypal" width="42.7" height="24"></button>
-                <button><img src="checkout-img/discover.png" alt="Bank transfer" width="42.7" height="24"></button>
-            </div>
-            <label for="">Name on card</label>
-            <input type="text" id="name-on-card" name="name-on-card" required>
-
-            <label for="">Debit/Credit card number</label>
-            <input type="text" id="card-number" name="card-number" required>
-
-            <label for="">Expiration Date</label>
-            <select name="month" id="month">
-                <option value="Jenuary">Jenuary</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-            </select>
-
-            <select name="year" id="year">
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-            </select>
-
-            <label for="">Security Code</label>
-            <input type="text" id="security-code" name="security-code" required>
-
-            <label for="">Billing Zip code</label>
-            <input type="text" id="billing-zip-code" name="billing-zip-code" required>
-
-        </div>
-
-        <div class="important-information">
-            <div class="check-title">
-                <h3>Important information about your booking</h3>
-            </div>
-            <ul>
-                <li>This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit to use for a future stay.</li>
-                <li>Stay extensions will require a new reservation.</li>
-                <li>Front desk staff will greet guests on arrival</li>
-                <li>No refunds will be issued for late check-in or early check-out.</li>
-            </ul>
-
-            <p>
-                By clicking the button below, I acknowledge that I have reviewed the Privacy Statement and have reviewd and accept the Rules and Restrictions and Terms of Use.
-            </p>
-            <button class="confirm-button">Complete Booking</button>
-
-            <div>
-                <img src="checkout-img/secure.svg" alt="">
-                <p>We use secure transmission and encrypted storage to protect your personal information</p>
-            </div>
-
-        </div>
-        <div class="hotel-info">
-            <img src="/searchresult/product-detail/product-img/img2.png" alt="">
-            <div class="etiqueta">
-                <h3>Lakeside Motel Warefront</h3>
-            </div>
-            <div class="div-text">
-                <div class="div-a1texto">    
-                    <div class="puntuacion">
-                        <img src="/searchresult/result-img/stars.svg" alt="">
-                        <p class="p-14 color-gris">4.5 (1200 Reviews)</p>
+            <div class="div-b">
+                <div class="hotel-info">
+                    <img src="/searchresult/product-detail/product-img/img2.png" alt="" class="img2">
+                    <div class="etiqueta">
+                        <h3>Lakeside Motel Warefront</h3>
                     </div>
-                        <p class="p-14 rojo">Non refundable</p>
-                        <p class="p-14">Check in: Sunday, March 18, 2022</p>
-                        <p class="p-14">Check out: Tuesday, March 20, 2022</p>
-                        <p class="p-14">2 night stay</p>
+                    <div class="div-text">  
+                        <div class="puntuacion">
+                            <img src="/searchresult/result-img/stars.svg" alt="">
+                            <p class="p-14">4.5 (1200 Reviews)</p>
+                        </div>
+                        <p class="p-14 rojo margin">Non refundable</p>
+                        <p class="p-14 margin">Check in: Sunday, March 18, 2022</p>
+                        <p class="p-14 margin">Check out: Tuesday, March 20, 2022</p>
+                        <p class="p-14 margin">2 night stay</p>
+
+                    </div>
+                </div>
+
+                <div class="price-details">
+                        <div class="check-title-green">
+                            <h3>Price Details</h3>
+                        </div>
+                        <div class="price-details-div">
+                            <div class="room-tax-container">
+                                <div class="room-price">
+                                    <p>1 room X 2 nights</p>
+                                    <p>$ 120.32</p>
+                                </div>
+                                <div class="tax-service">
+                                    <p>Tax and service fees</p>
+                                    <p>$ 8.32</p>
+                                </div> 
+                            </div>
+                                
+                            <div class="total-price">
+                                <h4>Total</h4>
+                                <h3>$130</h3>
+                            </div>
+                                
+                            <p class="coupon"><a href="">Use a coupon, credit or promotional code</a></p>
+                            <div class="coupon-code">
+                                <label for="">Coupon Code</label>
+                                <div class="apply-coupon p-15">
+                                    <input type="text" id="coupon-code" name="coupon-code">
+                                    <button class="apply-button">Apply Coupon</button>
+                                </div>
+                            </div>
+                                
+                                
+                        </div>
+                            
                 </div>
             </div>
         </div>
-        <div class="price-details">
-            <h3>Price Details</h3>
-            <p>1 room X 2 nights</p>
-            <p>Tax and service fees</p>
-            <p>$ 120.32</p>
-            <p>$ 8.32</p>
-            <hr>
-            <h4>Total</h4>
-            <h3>$130</h3>
-            <p>Use a coupon, credit or promotional code</p>
-
-            <label for="">Coupon Code</label>
-            <input type="text" id="coupon-code" name="coupon-code">
-            <button class="apply-button">Apply Coupon</button>
-        </div>
-
+        
+    
     </main>
 
 </body>

@@ -19,7 +19,9 @@ body{
 }
 .tamaño-20{
     font-size: 20px;
-    margin-top: 10px;
+}
+.tamaño-18{
+    font-size: 18px;
 }
 .tamaño-16{
     font-size: 16px;
@@ -137,7 +139,7 @@ header img{
     background-color: #F2C94C;
     color: #333333;
     height: 60px;
-    padding-left: 30px;
+    padding-left: 15px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -209,7 +211,7 @@ input{
 /*div text-alert*/
 .text-alert{
     display: flex;
-    align-items: end;
+    align-items: center;
     gap: 10px;
 }
 /*text alerts*/
@@ -332,7 +334,7 @@ input{
 }
 .important-information-text{
     padding-top: 35px;
-    padding-right: 20px;
+    padding-right: 25px;
     padding-left: 45px;
 }
 .important-information-text2{
@@ -382,8 +384,7 @@ input{
 .hotel-info{
     background-color: #FFFFFF;
     height: 400px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-radius: 6px;
 }
 .etiqueta{
     margin-left: 20px;
@@ -405,6 +406,12 @@ input{
 .margin{
     margin-top: 10px;
 }
+.gris{
+    color: #4F4F4F;
+}
+.negro{
+    color: #181818;
+}
 /*price details*/
 .check-title-green{
     display: flex;
@@ -424,9 +431,12 @@ input{
 }
 .price-details-div{
     background-color: #FFFFFF;
-    height: 338px;
+    height: 295px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
 }
 .room-price, .tax-service{
     display: flex;

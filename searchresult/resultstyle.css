@@ -4,6 +4,9 @@
 }
 main{
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 body{
     font-family: 'SF Pro Display', sans-serif;
@@ -44,13 +47,16 @@ body{
 header{
     background: linear-gradient(to bottom, #2969BF 0%, #144E9D 50%);
     height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1240px;
-    justify-self: center;
+    padding-bottom: 8%;
 }
 
 header img{

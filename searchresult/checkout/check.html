@@ -9,241 +9,242 @@
 <body>
     <header>
         <div class="header-container">
-            <div>
-                <img src="/homepage/mydreamplace.svg" alt="my dream place" width="131" height="21">
-            </div>
-            
+                <div>
+                    <img src="/homepage/mydreamplace.svg" alt="my dream place" width="131" height="21">
+                </div>
+                    
             <div class="header-button">
                 <img src="/homepageiniciado/notification.svg" alt="" width="24" height="24">
                 <img src="/homepageiniciado/girl.png" alt="" width="44" height="44" class="girl-icon">
             </div> 
         </div>
-        
     </header>
 
+            
     <main>
-        <h1 class="secure-h1">Secure your reservation</h1>
-        <div class="covid-div">
-            <div class="covid-content">
-                <img src="/homepage/Group.svg" alt="" width="32" height="32">
-                <p class="p-16">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+            <h1 class="secure-h1">Secure your reservation</h1>
+            <div class="covid-div">
+                <div class="covid-content">
+                    <img src="/homepage/Group.svg" alt="" width="32" height="32">
+                    <p class="p-16">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+                </div>
             </div>
-        </div>
 
-        <div class="div-a-b">
-                <div class="div-a">
-                <div class="check-div">
-                    <div class="check-title">
-                        <img src="checkout-img/security-user.svg" alt="">
-                        <h2 class="tamaño-18">Room 1</h2>
-                        <p class="p-16">2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
+            <div class="div-a-b">
+                    <div class="div-a">
+                    <div class="check-div">
+                        <div class="check-title">
+                            <img src="checkout-img/security-user.svg" alt="">
+                            <h2 class="tamaño-18">Room 1</h2>
+                            <p class="p-16">2 adults, 1 double bed and 1 twin bed, Non-smoking</p>
+                        </div>
+                        <div class="check-form">
+                            <form>
+                                <div class="name">
+                                    <div class="input-group">
+                                        <label for="first-name" class="negro p-14">First Name</label>
+                                        <input type="text" id="first-name" name="first-name" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="last-name" class="negro p-14">Last Name</label>
+                                        <input type="text" id="last-name" name="last-name" required>
+                                    </div>
+                                </div>
+                                <div class="mobil-number">
+                                    <div class="input-group">
+                                        <label for="phone" class="negro p-14">Mobile number</label>
+
+                                        <div class="phone-select">
+                                            <img src="checkout-img/australia.svg" alt="" width="24" height="24">
+                                            <select name="pais" id="paises">
+                                                <option value="Australia" class="australia">+61</option>
+                                            </select>
+                                            <input type="tel" id="phone" name="phone" required>
+                                        </div>                 
+
+                                    </div>
+
+                                </div>
+                                
+                                <div class="text-alert">
+                                    <input type="checkbox" id="alert" name="terms" required>
+                                    <label for="alert" class="gris p-14">Receive text alerts about this trip.</label>
+                                </div>
+                                
+                            </form>
+                        </div>
                     </div>
-                    <div class="check-form">
-                        <form>
-                            <div class="name">
-                                <div class="input-group">
-                                    <label for="first-name" class="negro p-14">First Name</label>
-                                    <input type="text" id="first-name" name="first-name" required>
-                                </div>
-                                <div class="input-group">
-                                    <label for="last-name" class="negro p-14">Last Name</label>
-                                    <input type="text" id="last-name" name="last-name" required>
-                                </div>
-                            </div>
-                            <div class="mobil-number">
-                                <div class="input-group">
-                                    <label for="phone" class="negro p-14">Mobile number</label>
 
-                                    <div class="phone-select">
-                                        <img src="checkout-img/australia.svg" alt="" width="24" height="24">
-                                        <select name="pais" id="paises">
-                                            <option value="Australia" class="australia">+61</option>
-                                        </select>
-                                        <input type="tel" id="phone" name="phone" required>
-                                    </div>                 
+                    <div class="payment-methods">
+                        <div class="check-title">
+                            <img src="checkout-img/card-tick.svg" alt="">
+                            <h2 class="tamaño-18">Payment options</h2>
+                        </div>
 
+                        <div class="methods-div">
+                            <div class="payment-div">
+                                <div class="payment">
+                                    <button class="debit gris">Debit/Credit Card</button>
+                                    <button class="paypal gris">Paypal</button>
+                                    <button class="bank gris">Bank transfer</button>
                                 </div>
-
                             </div>
                             
-                            <div class="text-alert">
-                                <input type="checkbox" id="alert" name="terms" required>
-                                <label for="alert" class="gris p-14">Receive text alerts about this trip.</label>
+                            <div class="payment-buttons">
+                                <button><img src="checkout-img/mastercard.svg" alt="Visa" width="43" height="24"></button>
+                                <button><img src="checkout-img/visa.svg" alt="Mastercard" width="43" height="24"></button>
+                                <button><img src="checkout-img/america.svg" alt="Paypal" width="43" height="24"></button>
+                                <button><img src="checkout-img/discover.svg" alt="Bank transfer" width="43" height="24"></button>
+                            </div>
+
+                            <div class="input-name-card">
+                                <label class="negro p-14">Name on card</label>
+                                <input type="text" id="name-on-card" name="name-on-card" required>
                             </div>
                             
-                        </form>
+                            <div class="input-name-card">
+                                <label class="negro p-14">Debit/Credit card number</label>
+                                <input type="text" id="card-number" name="card-number" required>
+                            </div>
+                            
+                            <div class="month-year-group">
+                                <label class="negro p-14">Expiration Date</label>
+                                <div class="month-year">
+                                    <select name="month" id="month">
+                                        <option value="Month">Month</option>
+                                        <option value="Jenuary">Jenuary</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="May">May</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                    </select>
+                                    <select name="year" id="year">
+                                        <option value="Year">Year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="div-security-zip">
+                                <div class="input-security-code">
+                                    <label class="negro p-14">Security Code</label>
+                                    <input type="text" id="security-code" name="security-code" required>
+                                </div>
+
+                                <div class="input-security-code">
+                                    <label class="negro p-14">Billing Zip code</label>
+                                    <input type="text" id="billing-zip-code" name="billing-zip-code" required>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="important-information">
+                        <div class="check-title-yellow">
+                            <h2 class="tamaño-18">Important information about your booking</h2>
+                        </div>
+                        <div class="important-information-div">
+                            <div class="important-information-text gris">
+                                <ul>
+                                    <li class="p-15">This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit to use for a future stay.</li>
+                                    <li class="p-15">Stay extensions will require a new reservation.</li>
+                                    <li class="p-15">Front desk staff will greet guests on arrival</li>
+                                    <li class="p-15">No refunds will be issued for late check-in or early check-out.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="important-information-text2">
+                                <p class="p-14 gris">
+                                    By clicking the button below, I acknowledge that I have reviewed the <a href="">Privacy Statement</a> and have reviewd and accept the <a href="">Rules and Restrictions</a> and <a href="">Terms of Use</a>.
+                                </p>
+                            </div>
+                        
+                            <button class="confirm-button p-15">Complete Booking</button>
+
+                            <div class="secure-transmission">
+                                <img src="checkout-img/secure.svg" alt="">
+                                <p class="gris p-14">We use secure transmission and encrypted storage to protect your personal information</p>
+                            </div>
+                        </div>
+                        
+
                     </div>
                 </div>
+                
 
-                <div class="payment-methods">
-                    <div class="check-title">
-                        <img src="checkout-img/card-tick.svg" alt="">
-                        <h2 class="tamaño-18">Payment options</h2>
+                <div class="div-b">
+                    <div class="hotel-info">
+                        <img src="/searchresult/product-detail/product-img/img2.png" alt="" class="img2">
+                        <div class="etiqueta negro">
+                            <h3 class="tamaño-18">Lakeside Motel Warefront</h3>
+                        </div>
+                        <div class="div-text">  
+                            <div class="puntuacion gris">
+                                <img src="/searchresult/result-img/stars.svg" alt="">
+                                <p class="p-14">4.5 (1200 Reviews)</p>
+                            </div>
+                            <p class="p-14 rojo margin">Non refundable</p>
+                            <p class="p-14 margin gris">Check in: Sunday, March 18, 2022</p>
+                            <p class="p-14 margin gris">Check out: Tuesday, March 20, 2022</p>
+                            <p class="p-14 margin gris">2 night stay</p>
+
+                        </div>
                     </div>
 
-                    <div class="methods-div">
-                        <div class="payment-div">
-                            <div class="payment">
-                                <button class="debit gris">Debit/Credit Card</button>
-                                <button class="paypal gris">Paypal</button>
-                                <button class="bank gris">Bank transfer</button>
+                    <div class="price-details">
+                            <div class="check-title-green">
+                                <h3>Price Details</h3>
                             </div>
-                        </div>
-                        
-                        <div class="payment-buttons">
-                            <button><img src="checkout-img/mastercard.svg" alt="Visa" width="43" height="24"></button>
-                            <button><img src="checkout-img/visa.svg" alt="Mastercard" width="43" height="24"></button>
-                            <button><img src="checkout-img/america.svg" alt="Paypal" width="43" height="24"></button>
-                            <button><img src="checkout-img/discover.svg" alt="Bank transfer" width="43" height="24"></button>
-                        </div>
-
-                        <div class="input-name-card">
-                            <label class="negro p-14">Name on card</label>
-                            <input type="text" id="name-on-card" name="name-on-card" required>
-                        </div>
-                        
-                        <div class="input-name-card">
-                            <label class="negro p-14">Debit/Credit card number</label>
-                            <input type="text" id="card-number" name="card-number" required>
-                        </div>
-                        
-                        <div class="month-year-group">
-                            <label class="negro p-14">Expiration Date</label>
-                            <div class="month-year">
-                                <select name="month" id="month">
-                                    <option value="Month">Month</option>
-                                    <option value="Jenuary">Jenuary</option>
-                                    <option value="February">February</option>
-                                    <option value="March">March</option>
-                                    <option value="April">April</option>
-                                    <option value="May">May</option>
-                                    <option value="June">June</option>
-                                    <option value="July">July</option>
-                                    <option value="August">August</option>
-                                    <option value="September">September</option>
-                                    <option value="October">October</option>
-                                    <option value="November">November</option>
-                                    <option value="December">December</option>
-                                </select>
-                                <select name="year" id="year">
-                                    <option value="Year">Year</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                </select>
+                            <div class="price-details-div">
+                                <div class="room-tax-container gris">
+                                    <div class="room-price">
+                                        <p>1 room X 2 nights</p>
+                                        <p>$ 120.32</p>
+                                    </div>
+                                    <div class="tax-service">
+                                        <p>Tax and service fees</p>
+                                        <p>$ 8.32</p>
+                                    </div> 
+                                </div>
+                                    
+                                <div class="total-price negro">
+                                    <h4>Total</h4>
+                                    <h3 class="tamaño-20">$130</h3>
+                                </div>
+                                    
+                                <p class="coupon"><a href="">Use a coupon, credit or promotional code</a></p>
+                                <div class="coupon-code negro">
+                                    <label class="p-14">Coupon Code</label>
+                                    <div class="apply-coupon p-15">
+                                        <input type="text" id="coupon-code" name="coupon-code">
+                                        <button class="apply-button">Apply Coupon</button>
+                                    </div>
+                                </div>
+                                    
+                                    
                             </div>
-                            
-                        </div>
-                        <div class="div-security-zip">
-                            <div class="input-security-code">
-                                <label class="negro p-14">Security Code</label>
-                                <input type="text" id="security-code" name="security-code" required>
-                            </div>
-
-                            <div class="input-security-code">
-                                <label class="negro p-14">Billing Zip code</label>
-                                <input type="text" id="billing-zip-code" name="billing-zip-code" required>
-                            </div>
-                        </div>
-                        
+                                
                     </div>
-                    
-                </div>
-
-                <div class="important-information">
-                    <div class="check-title-yellow">
-                        <h2 class="tamaño-18">Important information about your booking</h2>
-                    </div>
-                    <div class="important-information-div">
-                        <div class="important-information-text gris">
-                            <ul>
-                                <li class="p-15">This rate is non-refundable. If you change or cancel your booking you will not get a refund or credit to use for a future stay.</li>
-                                <li class="p-15">Stay extensions will require a new reservation.</li>
-                                <li class="p-15">Front desk staff will greet guests on arrival</li>
-                                <li class="p-15">No refunds will be issued for late check-in or early check-out.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="important-information-text2">
-                            <p class="p-14 gris">
-                                By clicking the button below, I acknowledge that I have reviewed the <a href="">Privacy Statement</a> and have reviewd and accept the <a href="">Rules and Restrictions</a> and <a href="">Terms of Use</a>.
-                            </p>
-                        </div>
-                    
-                        <button class="confirm-button p-15">Complete Booking</button>
-
-                        <div class="secure-transmission">
-                            <img src="checkout-img/secure.svg" alt="">
-                            <p class="gris p-14">We use secure transmission and encrypted storage to protect your personal information</p>
-                        </div>
-                    </div>
-                    
-
                 </div>
             </div>
             
-
-            <div class="div-b">
-                <div class="hotel-info">
-                    <img src="/searchresult/product-detail/product-img/img2.png" alt="" class="img2">
-                    <div class="etiqueta negro">
-                        <h3 class="tamaño-18">Lakeside Motel Warefront</h3>
-                    </div>
-                    <div class="div-text">  
-                        <div class="puntuacion gris">
-                            <img src="/searchresult/result-img/stars.svg" alt="">
-                            <p class="p-14">4.5 (1200 Reviews)</p>
-                        </div>
-                        <p class="p-14 rojo margin">Non refundable</p>
-                        <p class="p-14 margin gris">Check in: Sunday, March 18, 2022</p>
-                        <p class="p-14 margin gris">Check out: Tuesday, March 20, 2022</p>
-                        <p class="p-14 margin gris">2 night stay</p>
-
-                    </div>
-                </div>
-
-                <div class="price-details">
-                        <div class="check-title-green">
-                            <h3>Price Details</h3>
-                        </div>
-                        <div class="price-details-div">
-                            <div class="room-tax-container gris">
-                                <div class="room-price">
-                                    <p>1 room X 2 nights</p>
-                                    <p>$ 120.32</p>
-                                </div>
-                                <div class="tax-service">
-                                    <p>Tax and service fees</p>
-                                    <p>$ 8.32</p>
-                                </div> 
-                            </div>
-                                
-                            <div class="total-price negro">
-                                <h4>Total</h4>
-                                <h3 class="tamaño-20">$130</h3>
-                            </div>
-                                
-                            <p class="coupon"><a href="">Use a coupon, credit or promotional code</a></p>
-                            <div class="coupon-code negro">
-                                <label class="p-14">Coupon Code</label>
-                                <div class="apply-coupon p-15">
-                                    <input type="text" id="coupon-code" name="coupon-code">
-                                    <button class="apply-button">Apply Coupon</button>
-                                </div>
-                            </div>
-                                
-                                
-                        </div>
-                            
-                </div>
-            </div>
-        </div>
         
-    
     </main>
+    
 
 </body>
 </html>

@@ -82,12 +82,14 @@ header img{
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    text-align: center;
 }
 .header-register{
     width: 92px;
     height: 40px;
     border-radius: 8px;
-    
+    align-content: center;
+    text-decoration: none;
     background-color: #FFFFFF;
     border: 1px solid #2F80ED;
 }
@@ -98,7 +100,8 @@ header img{
     width: 92px;
     height: 40px;
     border-radius: 8px;
-   
+    align-content: center;
+    text-decoration: none;
     background-color: #2F80ED;
     border: 1px solid #2F80ED;
 }

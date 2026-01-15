@@ -567,7 +567,8 @@ input:checked + .slider:before {
   margin-right: 10px;
   width: 20px;
   height: 20px;
-  border-radius: 5px solid #BDBDBD;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
   vertical-align: top;
 }
 

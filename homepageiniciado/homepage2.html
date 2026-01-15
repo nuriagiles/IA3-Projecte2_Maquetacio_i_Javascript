@@ -68,35 +68,12 @@
             </div>
             
         </div>
-        
-            <script>
-                document.querySelectorAll(".input-item input").forEach(input => {
-
-                    // Guarda el placeholder original (pregunta)
-                    const originalPlaceholder = input.placeholder;
-
-                    input.addEventListener("focus", () => {
-                        input.value = input.dataset.final;  // texto final (azul)
-                        input.placeholder = "";             // quita placeholder
-                        input.style.color = "#1a73e8";      // azul
-                    });
-
-                    input.addEventListener("blur", () => {
-
-                        // Si se borra el texto → vuelve la pregunta
-                        if (input.value.trim() === "") {
-                            input.placeholder = originalPlaceholder;
-                            input.style.color = "#555";     
-                        }
-                    });
-                });
-            </script>
 
 
         <div class="covid-div">
             <div class="covid-content">
                 <img src="/homepage/Group.svg" alt="" width="32" height="32">
-                <p class="p-16">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
+                <p class="p-16 color-gris">Check the latest COVID-19 restrictions before you travel. <a href="">Learn more</a></p>
             </div>
             
         </div>
@@ -104,7 +81,7 @@
 
         <div class="seccion-2">
             <h2 class="tamaño-28">Enjoy your dream vacation</h2>
-            <p class="p-16">Plan and book our perfect trip with expert advice, travel tips, destination information and <br> inspiration from us</p>
+            <p class="p-16 color-gris">Plan and book our perfect trip with expert advice, travel tips, destination information and <br> inspiration from us</p>
             
             <div class="seccion2-gallery">
                 <div>

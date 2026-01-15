@@ -126,7 +126,7 @@ header img{
     color: #FFFFFF;
     text-align: center;
 }
-/*nav con buttons overview*/
+/*buttons overview*/
 .overview-container{
     background-color: #FFFFFF;
     width: 100%;
@@ -165,7 +165,7 @@ header img{
     width: 94px;
     height: 44px;
     border: 0px;
-    border-bottom: 2px solid #4796FF;
+    border-bottom: 3px solid #4796FF;
 }
 .rooms-button{
     width: 77px;
@@ -186,7 +186,7 @@ header img{
     align-self: end;
     padding: 10px;
     border-radius: 8px;
-    transform: translateY(40%);
+    transform: translateY(140%);
 }
 
 /*Flex container*/
@@ -287,6 +287,7 @@ header img{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 10px 0px 10px;
 }
 
 .puntuacion p {
@@ -298,11 +299,7 @@ header img{
     display: flex;
     align-items: center;
     gap: 8px;
-}
-
-.location p {
-    font-size: 13px;
-    color: #888;
+    color: #333333;
 }
 
 /*information div*/
@@ -312,7 +309,12 @@ header img{
     border-radius: 6px;
     width: 740px;
 }
-
+.hr-information{
+    width: 760px;
+}
+.overview-text{
+    margin-top: 20px;
+}
 .information-div h4 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -322,7 +324,7 @@ header img{
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 10px;
-    color: #555;
+    color: #4F4F4F;
 }
 
 .information-div hr {
@@ -334,7 +336,8 @@ header img{
 /*Top*/
 .ul-top {
     display: flex;
-    gap: 40px;
+    gap: 105px;
+    margin-top: 20px;
 }
 
 .ul-top ul {
@@ -349,9 +352,12 @@ header img{
     align-items: center;
     gap: 10px;
     font-size: 14px;
-    color: #555;
+    color: #4F4F4F;
 }
 /*explore the area*/
+.div-map h4{
+    margin-top: 25px;
+}
 .map{
     border-radius: 6px;
 }
@@ -359,9 +365,11 @@ header img{
     display: flex;
     justify-content: space-between;
     line-height: 30px;
+    margin-top: 15px;
+    color: #4F4F4F;
 }
 .explore-area-time{
-    line-height: 37px;
+    line-height: 34px;
 }
 /*seccion-2 ul*/
 
@@ -378,7 +386,7 @@ header img{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     font-size: 14px;
 }
 

@@ -15,7 +15,12 @@ body{
     src: url('/fuente/SFPRODISPLAYREGULAR.OTF') format('opentype');
     font-weight: 400;
 }
-
+.p-16{
+    font-size: 16px;
+}
+.p-14{
+    font-size: 14px;
+}
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -115,7 +120,6 @@ input[type="checkbox"] {
 /*forgot*/
 form p a {
     color: #1a73e8;
-    font-size: 13px;
     text-decoration: none;
     justify-self: center;
 }

@@ -12,33 +12,33 @@ body{
     
 }
 .tamaño-32{
-    size: 32px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 .tamaño-28{
-    size: 28px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 .tamaño-20{
-    size: 20px;
+    font-size: 20px;
     margin-top: 10px;
 }
 .tamaño-16{
-    size: 16px;
+    font-size: 16px;
 }
 .p-20{
-    size: 20px;
+    font-size: 20px;
 }
 .p-16{
-    size: 16px;
+    font-size: 16px;
 }
 .p-14{
-    size: 14px;
+    font-size: 14px;
     margin-top: 5px;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    src: url('/fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
 }
 header{

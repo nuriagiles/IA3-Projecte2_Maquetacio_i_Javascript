@@ -41,7 +41,7 @@ body{
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    src: url('/fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
 }
 header{
@@ -269,7 +269,7 @@ header img{
 }
 /*sort*/
 .sort-text{
-    margin-top: 8px;
+    margin-top: 5px;
 }
 .div-sort{
     display: flex;
@@ -302,9 +302,15 @@ header img{
     border-radius: 5px;
     align-items: center;
 }
+.margin{
+    margin-bottom: 8px;
+}
+.div-a1texto-container{
+    width: 545px;
+}
 .div-text{
     display: flex;
-    gap: 25px;
+    justify-content: space-between;
 }
 
 .div-a1 .img8{
@@ -337,8 +343,8 @@ header img{
 
 }
 .div-precio {
-    display: flex; /* Usamos flexbox para controlar el alineamiento */
-    flex-direction: column; /* Esto organiza los elementos en una columna */
+    display: flex; 
+    flex-direction: column; 
     text-align: end;
     justify-content: flex-end;
 }
@@ -351,7 +357,7 @@ header img{
     border-radius: 6px;
     text-align: center;
     margin-bottom: 10px;
-    margin-left: auto; /* Esto empuja el div .descuento hacia la derecha */
+    margin-left: auto; 
     align-content: center;
 }
 
@@ -359,13 +365,14 @@ header img{
     display: flex;
     align-items: center;
     justify-content: end;
+    gap: 10px;
 }
 .puntuacion{
     align-items: center;
     display: flex;
     gap: 5px;
     margin-bottom: 15px;
-    margin-top: 10px;
+
 }
 .etiqueta{
     display: flex;
@@ -418,6 +425,7 @@ header img{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     line-height: 25px;
+    color: #333333;
 }
 .toggle-row{
     margin-top: 20px;
@@ -432,14 +440,14 @@ header img{
   height: 16px;
 }
 
-/* Estilo del input tipo checkbox */
+/*Estilo del input tipo checkbox*/
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* Estilo del slider (la parte del interruptor) */
+/* Estilo del slider*/
 .slider {
   position: absolute;
   cursor: pointer;
@@ -452,7 +460,7 @@ header img{
   border-radius: 34px;
 }
 
-/* El círculo del interruptor */
+/*circulo del interrumptor*/
 .slider:before {
   position: absolute;
   content: "";
@@ -466,14 +474,13 @@ header img{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Cuando el checkbox está marcado, el interruptor se mueve */
 input:checked + .slider {
-  background-color: #2F80ED; /* Color verde cuando está activado */
+  background-color: #2F80ED;
 
 }
 
 input:checked + .slider:before {
-  transform: translateX(20px); /* Mueve el círculo hacia la derecha */
+  transform: translateX(20px); 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 .div-b{
@@ -546,14 +553,14 @@ input:checked + .slider:before {
 
 .filter-list li {
   display: flex;
-  justify-content: space-between; /* Mantiene el checkbox y el número a los lados */
-  align-items: center; /* Alinea verticalmente los elementos */
-  margin-bottom: 6px; /* Espacio entre los elementos */
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 6px; 
 }
 
 .filter-list label {
   display: flex;
-  align-items: center; /* Alinea el checkbox y el texto */
+  align-items: center; 
 }
 
 .filter-list input[type="checkbox"] {

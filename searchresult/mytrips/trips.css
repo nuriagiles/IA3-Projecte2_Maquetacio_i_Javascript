@@ -46,7 +46,7 @@ body{
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    src: url('/fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
 }
 header{

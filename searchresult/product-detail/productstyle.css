@@ -12,33 +12,29 @@ body{
     background-color: #F4F4F4;
 }
 .tamaño-32{
-    size: 32px;
-    margin-bottom: 20px;
+    font-size: 32px;
 }
 .tamaño-28{
-    size: 28px;
-    margin-bottom: 15px;
+    font-size: 28px;
 }
 .tamaño-20{
-    size: 20px;
-    margin-top: 10px;
+    font-size: 20px;
 }
 .tamaño-16{
-    size: 16px;
+    font-size: 16px;
 }
 .p-20{
-    size: 20px;
+    font-size: 20px;
 }
 .p-16{
-    size: 16px;
+    font-size: 16px;
 }
 .p-14{
-    size: 14px;
-    margin-top: 5px;
+    font-size: 14px;
 }
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+    src: url('/fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
 }
 header{
@@ -54,6 +50,8 @@ header{
     align-items: center;
     width: 1240px;
     justify-self: center;
+    height: fit-content;
+
 }
 
 header img{
@@ -128,18 +126,19 @@ header img{
     color: #FFFFFF;
     text-align: center;
 }
-/*nav overview*/
+/*nav con buttons overview*/
 .overview-container{
     background-color: #FFFFFF;
     width: 100%;
     border-bottom: 1px solid #E0E0E0;
+    
 }
 .overview{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 1240px;
-    justify-self: center;
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1240px;
 }
 .overview-linea{
     border-bottom: 5px solid #2F80ED;
@@ -148,9 +147,13 @@ header img{
 }
 
 .div-nav-2{
+    display: flex;
     margin-top: 15px;
     width: 331px;
     align-self: center;
+}
+.div-nav-2 button{
+    background-color: #FFFFFF;
 }
 .header-nav1{
     display: flex;
@@ -158,20 +161,32 @@ header img{
     justify-content: space-between;
     height: 48px;
 }
-.header-nav1 li a{
-    text-decoration: none;
-    color: #333333;
+.overview-button{
+    width: 94px;
+    height: 44px;
+    border: 0px;
+    border-bottom: 2px solid #4796FF;
 }
+.rooms-button{
+    width: 77px;
+    height: 44px;
+    border-style: none;
+}
+.guest-reviews{
+    width: 132px;
+    height: 44px;
+    border-style: none;
+}
+
 /*Wrapper*/
 .search-wrapper {
-
     background: #FFFFFF;
     position: absolute;
     display: flex;
     align-self: end;
     padding: 10px;
     border-radius: 8px;
-    transform: translateY(140%);
+    transform: translateY(40%);
 }
 
 /*Flex container*/
@@ -247,7 +262,8 @@ header img{
     gap: 20px;
 }
 .covid-content p{
-    align-self: center;
+    align-self: cente;
+    color: #333333;
 }
 .covid-content p a{
     text-decoration: none;
@@ -335,7 +351,18 @@ header img{
     font-size: 14px;
     color: #555;
 }
-
+/*explore the area*/
+.map{
+    border-radius: 6px;
+}
+.explore-area{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.explore-area-time{
+    line-height: 37px;
+}
 /*seccion-2 ul*/
 
 .seccion-2 > h4 {
@@ -355,9 +382,6 @@ header img{
     font-size: 14px;
 }
 
-.seccion-2 ul:last-of-type {
-    margin-top: 10px;
-}
 
 .seccion-2 ul:last-of-type li {
     font-size: 13px;
@@ -371,6 +395,35 @@ header img{
     background: linear-gradient(180deg, #4796FF 0%, #2366BF 100%);
     display: flex;
 }
+.blanco{
+    color: #FFFFFF;
+}
+.amarillo{
+    color: #FFD723;
+}
+.frame{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.promotional-div{
+    align-content: center;
+    margin-bottom: 25px;
+    width: 355px;
+}
+.myplace-promotional{
+    margin-bottom: 15px;
+}
+.p-promotional{
+    font-size: 24px;
+    width: 195px;
+}
+.boy{
+    align-self: end;
+    margin-bottom: 15px;
+    position: absolute;
+    transform: translateX(70%);
+}
+/*rooms*/
 .rooms {
     display: flex;
     gap: 20px;
@@ -382,14 +435,20 @@ header img{
 .div-rooms2 {
     background-color: #fff;
     border-radius: 6px;
-    padding: 15px;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+.div-rooms2 img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.div-rooms2 ul{
+    margin-left: 20px;
+}
 .rooms h5 {
+    margin-left: 20px;
     font-size: 16px;
     font-weight: 600;
 }
@@ -421,6 +480,11 @@ header img{
     margin-top: auto;
     width: 360px;
     height: 44px;
+    margin-bottom: 20px;
+}
+.rooms button a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 /*seccion 6*/
 .seccion-6{
@@ -431,7 +495,7 @@ header img{
     width: 225px;
 }
 .seccion6-nav{
-    margin-top: 90px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     gap: 120px;

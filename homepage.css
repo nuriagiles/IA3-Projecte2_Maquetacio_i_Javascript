@@ -4,6 +4,9 @@
 }
 main{
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 body{
     font-family: 'SF Pro Display', sans-serif;
@@ -38,6 +41,12 @@ body{
     font-family: 'SF Pro Display';
     src: url('fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');
     font-weight: 400;
+}
+header{
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .header-container{
     display: flex;
@@ -332,8 +341,7 @@ header img{
     margin-bottom: 15px;
 }
 .seccion6-title{
-    justify-self: center;
-    justify-items: center;
+    text-align: center;
 }
 .seccion6-title p{
     color: #2F80ED;

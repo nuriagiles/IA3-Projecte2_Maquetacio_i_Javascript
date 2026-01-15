@@ -2,11 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
-main{
-    justify-items: center;
-}
+
 body{
     font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 @font-face {
@@ -74,7 +75,7 @@ button.primary a {
     height: 250px;
     background-color: #FEE2654D;
     border-radius: 20px;
-    justify-self: center;
+    margin-left: 65px;
 }
 
 .fondo img{

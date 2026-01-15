@@ -297,7 +297,6 @@ header img{
 /*hoteles*/
 .div-a1{
     display: flex;
-    width: 915px;
     height: 240px;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
@@ -305,6 +304,7 @@ header img{
 }
 .div-text{
     display: flex;
+    gap: 25px;
 }
 
 .div-a1 .img8{
@@ -324,7 +324,7 @@ header img{
     color: #FFFFFF;
     border-radius: 6px;
     border: none;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .div-a1texto button a{
     text-decoration: none;
@@ -336,27 +336,36 @@ header img{
     justify-content: space-between;
 
 }
-.div-precio{
+.div-precio {
+    display: flex; /* Usamos flexbox para controlar el alineamiento */
+    flex-direction: column; /* Esto organiza los elementos en una columna */
     text-align: end;
-    align-self: self-end;
-    margin-left: 50px;
+    justify-content: flex-end;
 }
-.descuento{
+
+.descuento {
     background-color: #219653;
     color: #FFFFFF;
     width: 60px;
     height: 26px;
     border-radius: 6px;
     text-align: center;
-    align-content: center;
-    justify-self: self-end;
     margin-bottom: 10px;
+    margin-left: auto; /* Esto empuja el div .descuento hacia la derecha */
+    align-content: center;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .puntuacion{
     align-items: center;
     display: flex;
     gap: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 .etiqueta{
     display: flex;
@@ -414,6 +423,58 @@ header img{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+}
+
+/* Estilo del input tipo checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo del slider (la parte del interruptor) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* El círculo del interruptor */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  left: -3px;
+  bottom: -2px;
+  background-color: white;
+  transition: 0.4s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cuando el checkbox está marcado, el interruptor se mueve */
+input:checked + .slider {
+  background-color: #2F80ED; /* Color verde cuando está activado */
+
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px); /* Mueve el círculo hacia la derecha */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 .div-b{
     margin-top: 85px;
@@ -477,31 +538,32 @@ header img{
   margin-bottom: 30px;
 }
 
-.filter-label {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-input[type="checkbox"] {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px solid #BDBDBD;
-  vertical-align: top;
-}
 .filter-list {
   list-style: none;
-  align-items: center;
   padding: 0;
   margin: 0;
 }
 
 .filter-list li {
   display: flex;
-  justify-content: space-between;
-  align-items: self-end;
-  margin-bottom: 6px;
+  justify-content: space-between; /* Mantiene el checkbox y el número a los lados */
+  align-items: center; /* Alinea verticalmente los elementos */
+  margin-bottom: 6px; /* Espacio entre los elementos */
 }
+
+.filter-list label {
+  display: flex;
+  align-items: center; /* Alinea el checkbox y el texto */
+}
+
+.filter-list input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px solid #BDBDBD;
+  vertical-align: top;
+}
+
 
 .text-small {
   margin-bottom: 6px;

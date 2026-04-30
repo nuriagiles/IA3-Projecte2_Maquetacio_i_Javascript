@@ -1,12 +1,16 @@
-import {destinacionsDestacades} from './js/destinacionsDestacades.js';
-import {hotelsPopulars} from './js/hotelsPopulars.js';
-import {ofertes} from './js/ofertes.js';
 import { productDetailData } from './js/productDetail.js';
 import { searchResultsData } from './js/resultats.js';
 import {checkoutData} from './js/checkOut.js'
 import {myTripsData} from './js/myTrips.js'
-let supabaseUrl = "https://btpojiufjenfzyhvtidx.supabase.co";   // La URL del projecte
-let supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ0cG9qaXVmamVuZnp5aHZ0aWR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzNDEyOTAsImV4cCI6MjA5MTkxNzI5MH0.ss6q4PQq8JXNhC2IKxO1m-HSIJ1Jdfy--TeHFhiH87o";  // La clau "anon public"
+
+//supabase
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+const supabaseUrl = "https://oiyitodcscieoxokdobj.supabase.co";
+let supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9peWl0b2Rjc2NpZW94b2tkb2JqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzNDU5MzksImV4cCI6MjA5MTkyMTkzOX0.9lNN7LXRRTkyXRwGgKAqk5va5NsdWtGJRfioBkMLx9M";
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+
 let filas1 = ''
 let filas2 = ''
 let filas3 = ''
@@ -30,6 +34,7 @@ let check3 = ''
 
 let Mytrips = ''
 
+//Función para renderizar el HTML
 function render(selector, html) {
     const el = document.querySelector(selector);
     if (!el) return; // si no existe, no hace nada
@@ -40,48 +45,95 @@ function render(selector, html) {
 
 //Homepage
 //Destinacion 
-for (let i = 0; i < destinacionsDestacades.length; i++) {
+async function renderDestinacions() {
+  const { data, error } = await supabase
+    .from("destinacionsDestacades")
+    .select("*");
+
+  if (error) {
+    console.error(error);
+    return;
+  }
+
+  let filas1 = '';
+
+  for (let i = 0; i < data.length; i++) {
     filas1 += `
-        <div>
-            <img src="/${destinacionsDestacades[i].imatgeUrl}" alt="">
-            <h3 class="tamaño-20">${destinacionsDestacades[i].nom}</h3>
-            <p class="p-14">${destinacionsDestacades[i].propietatsCount} properties</p>
-        </div>
+      <div>
+        <img src="/${data[i].imatgeUrl}" alt="">
+        <h3 class="tamaño-20">${data[i].nom}</h3>
+        <p class="p-14">${data[i].propietatsCount} properties</p>
+      </div>
     `;
+  }
+
+  render("#seccion2-destinacion", filas1);
 }
-
-render("#seccion2-destinacion", filas1);
-
+renderDestinacions();
 
 //Ofertas
-for(let i = 0; i<ofertes.length; i++){
+async function renderOfertes() {
+  const { data, error } = await supabase
+    .from("ofertes")
+    .select("*");
+
+  if (error) {
+    console.error("Error loading ofertes:", error);
+    return;
+  }
+
+  let filas2 = '';
+
+  for (let i = 0; i < data.length; i++) {
     filas2 += `
-        <div>
-            <img src="/${ofertes[i].imatgeUrl}" alt="">
-            <div class="div-texto3">    
-                <h3 class="tamaño-20">${ofertes[i].titol}</h3>
-                <p class="p-16">${ofertes[i].descripcio}</p>
-            </div>
+      <div>
+        <img src="/${data[i].imatgeUrl}" alt="">
+        <div class="div-texto3">    
+          <h3 class="tamaño-20">${data[i].titol}</h3>
+          <p class="p-16">${data[i].descripcio}</p>
         </div>
+      </div>
     `;
+  }
+
+  render("#seccion3-ofertes", filas2);
 }
 
-render("#seccion3-ofertes", filas2);
+renderOfertes();
 
 //Hoteles
-for(let i = 0; i<hotelsPopulars.length; i++){
+async function renderHotels() {
+  const { data, error } = await supabase
+    .from("hotelsPopulars")
+    .select("*");
+
+  if (error) {
+    console.error("Error loading hotels:", error);
+    return;
+  }
+
+  let filas3 = '';
+
+  for (let i = 0; i < data.length; i++) {
     filas3 += `
-        <div>
-            <img src="/${hotelsPopulars[i].imatgeUrl}" alt="">
-            <h3 class="tamaño-20">${hotelsPopulars[i].nom}</h3>
-            <p class="p-14">${hotelsPopulars[i].propietatsCount} properties</p>
-        </div>
+      <div>
+        <img src="/${data[i].imatgeUrl}" alt="">
+        <h3 class="tamaño-20">${data[i].nom}</h3>
+        <p class="p-14">${data[i].propietatsCount} properties</p>
+      </div>
     `;
+  }
+
+  render("#seccion4-hoteles", filas3);
 }
-render("#seccion4-hoteles", filas3);
+
+renderHotels();
 
 //Search result
 //Buscador
+
+let filas4 = "";
+
 filas4 += `<div class="input-item clase1">
                 <span class="icon"><img src="/homepage/location.svg" alt=""></span>
                 <input id="location" type="text" placeholder="${searchResultsData.query.where}" data-final="${searchResultsData.query.where}">
@@ -105,7 +157,6 @@ render("#search-result", filas4);
 
 resultado += searchResultsData.totalResults
 render("#resultados-numero", resultado);
-//document.querySelector("#resultados-numero").innerHTML = resultado
 
 //Filtros
 for(let i = 0; i<searchResultsData.filters.budgetRanges.length; i++){

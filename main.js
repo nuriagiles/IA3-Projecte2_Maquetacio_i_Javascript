@@ -5,7 +5,8 @@ import { productDetailData } from './js/productDetail.js';
 import { searchResultsData } from './js/resultats.js';
 import {checkoutData} from './js/checkOut.js'
 import {myTripsData} from './js/myTrips.js'
-
+let supabaseUrl = "https://btpojiufjenfzyhvtidx.supabase.co";   // La URL del projecte
+let supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ0cG9qaXVmamVuZnp5aHZ0aWR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzNDEyOTAsImV4cCI6MjA5MTkxNzI5MH0.ss6q4PQq8JXNhC2IKxO1m-HSIJ1Jdfy--TeHFhiH87o";  // La clau "anon public"
 let filas1 = ''
 let filas2 = ''
 let filas3 = ''

@@ -131,31 +131,50 @@ renderHotels();
 
 //Search result
 //Buscador
+async function renderSearchBar() {
 
-let filas4 = "";
+  const { data, error } = await supabase
+    .from("searchResultsData")
+    .select("*")
+    .single();
 
-filas4 += `<div class="input-item clase1">
+  if (error) {
+    console.error("Error loading search config:", error);
+    return;
+  }
+
+  filas4 += `<div class="input-item clase1">
                 <span class="icon"><img src="/homepage/location.svg" alt=""></span>
-                <input id="location" type="text" placeholder="${searchResultsData.query.where}" data-final="${searchResultsData.query.where}">
-            </div>`
+                <input id="location" type="text" placeholder="${data.where}">
+            </div>`;
 
-filas4 += `<div class="input-item clase2">
+  filas4 += `<div class="input-item clase2">
                 <span class="icon"><img src="/homepage/calendar.svg" alt=""></span>
-                <input id="checkin" type="text" placeholder="${searchResultsData.query.checkin}" data-final="04-19-2022">
-            </div>`
+                <input id="checkin" type="text" placeholder="${data.checkin}">
+            </div>`;
 
-filas4 += `<div class="input-item clase2">
+  filas4 += `<div class="input-item clase2">
                 <span class="icon"><img src="/homepage/calendar.svg" alt=""></span>
-                <input id="checkout" type="text" placeholder="${searchResultsData.query.checkout}" data-final="04-19-2022">
-            </div>`
-filas4 += `<div class="input-item clase3">
+                <input id="checkout" type="text" placeholder="${data.checkout}">
+            </div>`;
+
+  filas4 += `<div class="input-item clase3">
                 <span class="icon"><img src="/homepage/user-square.svg" alt=""></span>
-                <input id="guests" type="text" placeholder="${searchResultsData.query.guests}" data-final="0 adult, 0 children">
-            </div>`
-filas4 += `<button onclick="location.href='/searchresult/result.html'">Search</button>`
-render("#search-result", filas4);
+                <input id="guests" type="text" placeholder="${data.guests}">
+            </div>`;
 
-resultado += searchResultsData.totalResults
+  filas4 += `<button onclick="location.href='/searchresult/result.html'">Search</button>`;
+    render("#search-result", filas4);
+
+}  
+renderSearchBar();
+
+//Numero de resultados
+const { data: results, error } = await supabase
+  .from("searchResultsData")
+  .select("*");
+
+resultado += results.totalResults;
 render("#resultados-numero", resultado);
 
 //Filtros

@@ -32,6 +32,9 @@ body{
 .p-14{
     font-size: 14px;
 }
+.rooms h5{
+    margin-top: 10px;
+}
 @font-face {
     font-family: 'SF Pro Display';
     src: url('/fuente/SFPRODISPLAYMEDIUM.OTF') format('opentype');

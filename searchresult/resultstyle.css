@@ -340,6 +340,7 @@ header img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 20px;
 
 }
 .div-precio {
@@ -347,6 +348,7 @@ header img{
     flex-direction: column; 
     text-align: end;
     justify-content: flex-end;
+    width: 280px;
 }
 
 .descuento {

@@ -218,7 +218,7 @@ header img{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 .div-a h2{
     justify-self: start;
@@ -305,6 +305,7 @@ header img{
     border: 1px solid #E0E0E0;
     border-radius: 5px;
     align-items: center;
+    margin-bottom: 20px;
 }
 .margin{
     margin-bottom: 8px;
@@ -335,6 +336,10 @@ header img{
     border-radius: 6px;
     border: none;
     margin-top: 15px;
+}
+.btn-load{
+    display: flex;
+    align-self: center;
 }
 .div-a1texto button a{
     text-decoration: none;

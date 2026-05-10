@@ -322,8 +322,7 @@ async function cargarHoteles() {
 
             </div>
 
-            <div class="div-precio">
-    `;
+            <div class="div-precio">`;
 
     // DESCUENTO
     if (item.descount) {
@@ -337,7 +336,13 @@ async function cargarHoteles() {
     hotelesResult += `
               <p class="p-14 color-gris">1 room 2 days</p>
 
-              <div class="precio">
+              <div class="precio">`
+
+    if (item.oldPrice) {
+      hotelesResult += `<img src="/searchresult/result-img/${item.oldPrice}.svg" alt="">`;
+    }
+
+    hotelesResult +=`
                 <h3>${item.pricePerNight}</h3>
               </div>
 
@@ -349,8 +354,7 @@ async function cargarHoteles() {
 
         </div>
 
-      </div>
-    `;
+      </div>`;
   }
 
   render("#hoteles-resultados", hotelesResult);

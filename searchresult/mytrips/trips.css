@@ -40,6 +40,8 @@ body{
 }
 .gris{
     color: #4F4F4F;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .negro{
     color: #1A1A1A;

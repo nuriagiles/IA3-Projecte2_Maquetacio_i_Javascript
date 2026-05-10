@@ -76,6 +76,10 @@ header img{
     text-decoration: none;
     color: #FFFFFF;
 }
+.btn-load{
+    display: flex;
+    align-self: center;
+}
 /*button header*/
 .header-button button a{
     text-decoration: none;
@@ -340,6 +344,7 @@ header img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 20px;
 
 }
 .div-precio {
@@ -347,6 +352,7 @@ header img{
     flex-direction: column; 
     text-align: end;
     justify-content: flex-end;
+    width: 280px;
 }
 
 .descuento {

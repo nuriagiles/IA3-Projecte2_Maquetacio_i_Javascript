@@ -76,6 +76,10 @@ header img{
     text-decoration: none;
     color: #FFFFFF;
 }
+.btn-load{
+    display: flex;
+    align-self: center;
+}
 /*button header*/
 .header-button button a{
     text-decoration: none;

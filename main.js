@@ -1,4 +1,3 @@
-
 //supabase
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
@@ -14,7 +13,6 @@ function render(selector, html) {
     if (!el) return; // si no existe, no hace nada
     el.innerHTML = html;
 }
-
 
 
 //Homepage
@@ -271,10 +269,8 @@ async function cargarHoteles() {
         <div class="div-a1texto-container">
 
           <div class="etiqueta">
-            <h3>${item.name}</h3>
-    `;
+            <h3>${item.name}</h3>`;
 
-    // BADGE
     if (item.badge) {
 
       if (item.badge.includes("15")) {
@@ -289,8 +285,7 @@ async function cargarHoteles() {
         hotelesResult += `
           <div class="fondo-naranja">
             <p>${item.badge}</p>
-          </div>
-        `;
+          </div>`;
       }
     }
 
@@ -324,13 +319,11 @@ async function cargarHoteles() {
 
             <div class="div-precio">`;
 
-    // DESCUENTO
     if (item.descount) {
       hotelesResult += `
         <div class="descuento">
           <p class="p-13">${item.descount}</p>
-        </div>
-      `;
+        </div>`;
     }
 
     hotelesResult += `
@@ -626,8 +619,6 @@ async function cargarCheckout() {
 
     render("#information-important", check1);
 
-
-    // HOTEL INFO
     let check2 = `
         <div class="hotel-info">
 
@@ -670,13 +661,10 @@ async function cargarCheckout() {
 
             </div>
 
-        </div>
-    `;
+        </div>`;
 
     render("#hotel-information", check2);
 
-
-    // PRICE DETAILS
     let check3 = '';
 
     for (let i = 0; i < data.price_items.length; i++) {
@@ -685,8 +673,7 @@ async function cargarCheckout() {
             <div class="room-price">
                 <p>${data.price_items[i].description}</p>
                 <p>$ ${data.price_items[i].amount}</p>
-            </div>
-        `;
+            </div>`;
     }
 
     render("#precio-detalles", check3);

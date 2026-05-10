@@ -340,7 +340,7 @@ header img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 20px;
+    padding-right: 20px;
 
 }
 .div-precio {

@@ -325,8 +325,11 @@ for(let i=0; i<checkoutData.priceDetails.items.length; i++){
             </div>`
 }
 
-document.querySelector("#precio-js").textContent = checkoutData.priceDetails.currency + checkoutData.priceDetails.total
+const precio = document.querySelector("#precio-js");
 
+if (precio) {
+  precio.textContent = checkoutData.priceDetails.currency + checkoutData.priceDetails.total;
+}
 render("#precio-detalles", check3);
 
 Mytrips = `<div class="etiqueta">
@@ -355,3 +358,5 @@ Mytrips = `<div class="etiqueta">
                     <button>View trip details</button>
                 </div>
             </div>`
+            
+render("#Mytrips-details", Mytrips)

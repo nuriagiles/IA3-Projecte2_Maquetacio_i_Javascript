@@ -63,7 +63,6 @@ export const searchResultsData = {
       description:
         "Live a little and relax with champagne\nReimagine a divine escape in the heart of the city with Parkside Conservation, parking and a late checkout. Gym include. Free cancellation applies",
       badge: "Receive 30% discount on extra nights",
-      descount: "5% off",
       pricePerNight: "$300",
     },
     {
@@ -106,6 +105,7 @@ export const searchResultsData = {
         "Live a little and relax with champagne\nReimagine a divine escape in the heart of the city with Parkside Conservation, parking and a late checkout. Gym include. Free cancellation applies",
       badge: "Receive 30% discount on extra nights",
       pricePerNight: "$190",
+      descount: "15% off",
       oldPrice: "$200",
     },
     {

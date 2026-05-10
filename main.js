@@ -179,7 +179,7 @@ async function cargarResultados() {
   }
 
   let resultado = "";
-  resultado += data.totalResults;
+  resultado += data.total_results;
 
   render("#resultados-numero", resultado);
 

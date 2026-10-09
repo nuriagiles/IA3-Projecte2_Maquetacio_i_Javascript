@@ -264,7 +264,7 @@ async function cargarHoteles() {
     hotelesResult += `
       <div class="div-a1">
 
-        <img src="/searchresult/result-img/${item.Img}" class="img8">
+        <img src="searchresult/result-img/${item.Img}" class="img8">
 
         <div class="div-a1texto-container">
 
